@@ -1,0 +1,202 @@
+/* 
+     --- Color ----
+    body
+        1 - #414141
+        2 - #38364B
+        3 - #444247
+        4 - #443737
+        5 - #393e46
+    nav
+        1 - #313131
+        2 - #2E2C3F
+        3 - #353337
+        4 - #272121
+        5 - #222831
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nanum+Pen+Script&family=Rock+Salt&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #414141;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: 'Domine', serif;
+    font-size: 18px;
+    color: #f5f6fa;
+    overflow: hidden;
+}
+
+nav {
+    width: 30%;
+    height: 100%;
+    /* border-right: solid 1px #718093; */
+    background: #313131;
+    -webkit-box-shadow: 2px 0px 5px 0px #313131;
+    -moz-box-shadow: 2px 0px 5px 0px #313131;
+    box-shadow: 2px 0px 5px 0px #313131;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+}
+
+footer {
+    display: flex;
+    position: sticky;
+    background-color: #2d3436;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: 'Rock Salt', cursive;
+    font-size: 10px;
+    height: 30px;
+    -webkit-box-shadow: 0px -4px 21px -5px #2d3436;
+    -moz-box-shadow: 0px -4px 21px -5px #2d3436;
+    box-shadow: 0px -4px 21px -5px #2d3436;
+}
+
+section {
+    /* height: 70%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    height: 70%;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    padding: 8%;
+}
+
+li:not(:first-child):hover, li:not(:first-child):hover a {
+    background-color: #414141;
+    cursor: pointer;
+    color: #c8d6e5;
+}
+
+img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 20px 5px #4c1e16;
+    -moz-box-shadow: 3px 3px 20px 5px #4c1e16;
+    box-shadow: 3px 3px 20px 5px #4c1e16;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f5f6fa;
+}
+
+li:first-child a:hover {
+    transition: .3;
+    color: #d2c6b2;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p:first-child {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    /* text-align: center; */
+    color: #fff;
+    /* font-family: monospace; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /*Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange }
+}
+
+#p1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+#p3 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 12px;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    line-height: 200px;
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+}
+  
+.gray {
+    background-color: #718093;  
+}
+
+.info {
+    width: 70%;
+    white-space: pre-wrap;
+}
+
+P {
+    line-break: auto;
+    margin: auto;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.footer {
+    position: absolute;
+    width: 30%;
+}
+.footer-nav {
+    display: flex;
+    width: 100%;
+}
