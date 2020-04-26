@@ -634,11 +634,6 @@ a {
     .timeline::after {
         left: 5px;
     }
-
-    #experiences {
-        height: 230%;
-    }
-
     .timeline {
         max-width: 70%;
     }
@@ -649,7 +644,9 @@ a {
         height: 310%;
     }
      #skills {
-        /* height: 70%; */
         height: 240%;
+    }
+    #experiences {
+        height: 310%;
     }
 }
