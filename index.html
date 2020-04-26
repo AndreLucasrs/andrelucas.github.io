@@ -6,48 +6,50 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>André Lucas</title>
-    <!-- Add icon para aba -->
-    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 </head>
 <body>
     
     <!-- Sidebar -->
     <nav>
+        <span id="icone">
+            <i class="fas fa-bars"></i>
+        </span>
         <ul>
-            <li>
-                <a href="#42">
-                    <div class="circle gray">
-                        <img src="https://avatars2.githubusercontent.com/u/12537847?s=400&v=4" alt="Foto do André Lucas">
-                    </div> 
-                    <h2>André Lucas</h2>
-                    <h4>Desenvolvedor Full Stack</h3>
-                </a>
+            <li id="galaxy" onclick="linkTo('42')">
+                <div class="circle gray">
+                    <img src="https://avatars2.githubusercontent.com/u/12537847?s=400&v=4" alt="Foto do André Lucas">
+                </div> 
+                <h2>André Lucas</h2>
+                <h4>Desenvolvedor Full Stack</h3>
             </li>
-            <li>
-                <a href="#aboutme">
-                    Sobre mim
-                </a>
+            <li id="about" onclick="linkTo('aboutme')">
+                Sobre mim
             </li>
-            <li>
-                <a href="#experience">
-                    Experiência
-                </a>
+            <li id="experience" onclick="linkTo('experiences')">
+                Experiência
             </li>
-            <li>
-                <a href="#skills">
-                    Habilidades
-                </a>
+            <li id="skill" onclick="linkTo('skills')">
+                Habilidades
             </li>
         </ul>
         <footer class="footer">
             <div class="footer-nav">
-                <i class="fab fa-twitter-square fa-2x"></i>
-                <i class="fab fa-twitter fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
-                <i class="fab fa-linkedin fa-2x"></i>
-                <i class="fab fa-github fa-2x"></i>
-                <i class="fab fa-github-square fa-2x"></i>
+                <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/AndreLucasrss">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/andre.lucasrs/">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/andr%C3%A9-lucas-731642124/">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/AndreLucasrs">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
             </div>
         </footer>
     </nav>
@@ -55,26 +57,128 @@
     <!-- Main -->
     <main>
         <section id="42">
-            <div class="center info typewriter">
+            <div class="center2 typewriter">
                 <p id="p1">Oi, eu sou o André Lucas, Desenvolvedor Full Stack</p>
             </div>
         </section>
         <section id="aboutme">
             <h2 class="title">Sobre mim</h2>
-            <div class="center">
-                <p>Eu sou Desenvolvedor Full Stack</p>
-            </div>
+            <div class="center aling-aboutme">
+                <p>Meu nome é André Lucas, sou graduado em Análise e Desenvolvimento de Sistema pelo <a href="https://www.ifg.edu.br/formosa">Instituto Federal de Goiás - IFG</a> e fui Bicampeão da maratona do IFG, com a equipe FULLSTACK OVERKILL para saber mais sobre a maratona clique <a target="_blank" class ="text-black" href="https://danielsaad.com/maratona/competicoes-anteriores/">AQUI</a>.</p>
+                <br>
+                <p>Trabalho na área a mais de 4 anos, utilizando Java a quase 3 anos, mas sempre trabalhei com a stack de backend e frontend desde quando comecei a trabalhar com Java, as tecnologias no frontend que já usei nesse período, foram desde JQuery a atualmente ReactJS.</p>
+                <br>
+                <br>
+                <h2 class="title aling-aboutme">Contato</h2>
+                <p class="text-center">Você pode entrar em contato comigo através de qualquer uma das minhas redes sociais.</p>
+                <br>
+                <br>
+                <div class="flex space">
+                    <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/AndreLucasrss">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/andre.lucasrs/">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/andr%C3%A9-lucas-731642124/">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a class="social" target="_blank" class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/AndreLucasrs">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
         </section>
-        <section id="experience">
+        <section id="experiences">
             <h2 class="title">Experiência</h2>
-            <div class="center">
-                <p>Eu sou Desenvolvedor Full Stack atualmente trabalho na MergIT</p>
+            <div>
+                <div class="timeline">
+                    <div class="container right">
+                        <div class="content">
+                            <p class="content-info">MergIT | Sebrae</p>
+                            <p class="content-info">Software Developer (09/09/2019 - Atualmente)</p>
+                            <p class="content-subinfo margin-top"><span class="bold">Principais atividades:</span> Desenvolvimento de aplicações web com teste unitários.</p>
+                            <div class="flex margin-top">
+                            <div>
+                                <span class="title-info">Projetos para o Sebrae</span>
+                                <p class="content-subinfo"><span class="bold">Database:</span> SQLServer, PostgreSQL</p>
+                                <p class="content-subinfo"><span class="bold">Backend:</span> Java, Spring Boot</p>
+                                <p class="content-subinfo"><span class="bold">Test:</span> JUnit</p>
+                                <p class="content-subinfo"><span class="bold">Frontend:</span> Angular, TypeScript, Bootstrap, HTML, CSS, ReactJS, Javascript, Material-UI, JSS</p>
+                            </div>
+                        </div>    
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <p class="content-info">Mirante Tecnologia | Sicoob</p>
+                            <p class="content-info">Desenvolvedor Java (03/06/2019 - 06/09/2019)</p>
+                            <p class="content-subinfo margin-top"><span class="bold">Principais atividades:</span> Desenvolvimento de aplicações Java com EJB, Apache FLex e teste unitários.</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <p class="content-info">Polisys Informática</p>
+                            <p class="content-info">Full Stack Developer (02/01/2019 – 24/05/2019)</p>
+                            <p class="content-subinfo margin-top"><span class="bold">Principais atividades:</span> Desenvolvimento de aplicações web</p>
+                            <div class="flex margin-top">
+                            <div>
+                                <span class="title-info">Projeto para BNDES</span>
+                                <p class="content-subinfo"><span class="bold">Database:</span> SQLServer</p>
+                                <p class="content-subinfo"><span class="bold">Backend:</span>  Java, EJB, RESTful services</p>
+                                <p class="content-subinfo"><span class="bold">Frontend:</span> Angular, TypeScript, Bootstrap, HTML, CSS</p>
+                            </div>
+                        </div>    
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                        <p class="content-info">Polisys Informática</p>
+                        <p class="content-info">Estagiário de desenvolvimento (07/08/2017 – 31/12/2018)</p>
+                        <p class="content-subinfo margin-top"><span class="bold">Principais atividades:</span> Desenvolvimento de aplicações web com teste unitários e teste de integração</p>
+                        <div class="flex margin-top">
+                            <div>
+                                <span class="title-info">Projeto para CGU</span>
+                                <p class="content-subinfo"><span class="bold">Database:</span> SQLServer</p>
+                                <p class="content-subinfo"><span class="bold">Backend:</span>  Java, EJB, RESTful services</p>
+                                <p class="content-subinfo"><span class="bold">Test:</span> JUnit, Selenium</p>
+                                <p class="content-subinfo"><span class="bold">Frontend:</span> JQuery, Javascript, Bootstrap, FreeMarker, HTML, CSS</p>
+                            </div>
+                            <div>
+                                <span class="title-info">Projeto para Anatel</span>
+                                <p class="content-subinfo"><span class="bold">Database:</span> SQLServer</p>
+                                <p class="content-subinfo"><span class="bold">Backend:</span> Java, Spring Boot</p>
+                                <p class="content-subinfo"><span class="bold">Test:</span> JUnit, Selenium</p>
+                                <p class="content-subinfo"><span class="bold">Frontend:</span> AngularJS 1X, AngularJS Material, HTML, CSS</p>
+                            </div>
+                        </div>    
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                        <p class="content-info">TCU – Tribunal de Contas da União</p>
+                        <p class="content-info">Estagiário de desenvolvimento (07/12/2015 – 04/08/2017)</p>
+                        <p class="content-subinfo margin-top"><span class="bold">Principais atividades:</span> Desenvolvimento de aplicações web com a ferramenta ORACLE APEX, linguagem SQL e PL/SQL.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="skills">
             <h2 class="title">Habilidades</h2>
-            <div class="center">
-                <p>Piadas ruins</p>
+            <div class="center aling-aboutme">
+                <p>Conhecimento nas linguagens de programação Java, Javascript, TypeScript.</p>
+                <br>
+                <p>Conhecimento nos frameworks e libs, JQuery, AngularJS 1X, Angular, ReactJS, Bootstrap, AngularJS Material, Material-UI, Spring Boot, EJB.</p>
+                <br>
+                <p>Conhecimento em CSS, HTML, SQL, HQL, JPA, JAX-RS, REST, MVC, JUnit, Selenium.</p>
+                <br>
+                <p>Bancos que tenho conhecimento, PostgreSQL, SQLServer, ORACLE.</p>
+                <br>
+                <p>Ferramentas utilizadas, IntelliJ IDEA, WebStorm, VSCode, Eclipse, GitHub, GitLab.</p>
+                <br>
+                <p>Outros conhecimentos em metodologia ágil, integração contínua ...</p>
+                <br><br>
+                <p>E o que eu não sei, posso aprender.</p>
             </div>
         </section>
         <footer>
