@@ -1,0 +1,649 @@
+/* 
+     --- Color ----
+    body
+        1 - #414141
+        2 - #38364B
+        3 - #444247
+        4 - #443737
+        5 - #393e46
+    nav
+        1 - #313131
+        2 - #2E2C3F
+        3 - #353337
+        4 - #272121
+        5 - #222831
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nanum+Pen+Script&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #414141;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: 'Domine', serif;
+    font-size: 18px;
+    color: #f5f6fa;
+    overflow: hidden;
+}
+
+nav {
+    width: 30%;
+    height: 100%;
+    /* border-right: solid 1px #718093; */
+    background: #313131;
+    -webkit-box-shadow: 2px 0px 5px 0px #313131;
+    -moz-box-shadow: 2px 0px 5px 0px #313131;
+    box-shadow: 2px 0px 5px 0px #313131;
+    z-index: 3;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+}
+
+footer {
+    display: flex;
+    position: sticky;
+    background-color: #2d3436;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: 'Rock Salt', cursive;
+    font-size: 10px;
+    height: 30px;
+    -webkit-box-shadow: 0px -4px 21px -5px #2d3436;
+    -moz-box-shadow: 0px -4px 21px -5px #2d3436;
+    box-shadow: 0px -4px 21px -5px #2d3436;
+    z-index: 1;
+}
+
+section {
+    /* height: 70%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    height: 70%;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    padding: 8%;
+    font-weight: bold;
+    color: #f5f6fa;
+    cursor: pointer;
+}
+
+li:not(:first-child):hover, li:not(:first-child):hover li {
+    background-color: #414141;
+    cursor: pointer;
+    color: #c8d6e5;
+}
+
+li:first-child li:hover {
+    transition: .3;
+    color: #c8d6e5;
+}
+
+
+img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 20px 5px #4c1e16;
+    -moz-box-shadow: 3px 3px 20px 5px #4c1e16;
+    box-shadow: 3px 3px 20px 5px #4c1e16;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p:first-child {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    /* text-align: center; */
+    color: #fff;
+    /* font-family: monospace; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /*Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange }
+}
+
+#p1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+#p3 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 12px;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    line-height: 200px;
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+}
+  
+.gray {
+    background-color: #718093;  
+}
+
+.info {
+    width: 70%;
+    white-space: pre-wrap;
+}
+
+P {
+    line-break: auto;
+    margin: auto;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.center2 {
+    margin: auto;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.footer {
+    position: absolute;
+    width: 30%;
+    z-index: 3;
+}
+.footer-nav {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: space-around;
+}
+
+#icone {
+    display: none;
+}
+
+
+
+
+.timeline {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+  /* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+  /* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+  
+  /* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+  /* Place the container to the left */
+.left {
+    left: -82px;
+}
+  /* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+  /* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+  /* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+  /* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+  /* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.content-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3d3d3d; 
+}
+
+.content-subinfo {
+    font-size: 14px;
+    color: #3d3d3d;
+}
+
+.title-info {
+    font-size: 14px;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+.margin-left {
+    margin-left: 4px;
+}
+
+.margin-top {
+    margin-top: 6px;
+}
+
+.flex {
+    display: flex;
+}
+
+.space {
+    place-content: space-around;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.aling-aboutme {
+    margin: 70px 80px;
+}
+
+.aling-aboutme p {
+    font-family: 'Quattrocento Sans', sans-serif;
+    line-height: 35px;
+    text-align: left;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+a {
+    text-decoration: inherit;
+    color: #FF9F55;
+}
+
+.social {
+    text-decoration: inherit;
+    color: #f5f6fa;
+}
+
+.social:hover {
+    color: #FF9F55;
+}
+
+#experiences {
+    height: 160%;
+}
+
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+  /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+  /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+    .left {
+        left: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    #p1 {
+        font-size: 20px;
+    }
+    #skills {
+        /* height: 70%; */
+        height: 180%;
+    }
+}
+@media (max-width: 768px) {
+
+    main {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #icone {
+        display: grid;
+        justify-content: flex-end;
+    }
+    body.fw nav {
+        flex: 0 0 25%;
+    }
+    body.fw nav ul{
+        transition: 0.5s step-end;
+        left: 0;
+    }
+    body.fw nav .footer{
+        position: absolute;
+        left: 0;
+    }
+    nav {
+        flex: 0 0 5vw;
+        transition: 0.5s ease-in;
+        text-align: right;
+        padding: 10px;
+        width: 5px;
+        background: #313131;
+        -webkit-box-shadow: 2px 0px 5px 0px #313131;
+        -moz-box-shadow: 2px 0px 5px 0px #313131;
+        box-shadow: 2px 0px 5px 0px #313131;
+    }
+    ul {
+        position: relative;
+        left: -500px;
+    }
+    .footer {
+        position: relative;
+        left: -500px;
+    }
+    span {
+        cursor: pointer;
+    }
+    span i {
+        transform: rotate(180deg);
+    }
+
+    html, body {
+        font-size: 14px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        -webkit-box-shadow: 3px 3px 20px 5px #4c1e16;
+        -moz-box-shadow: 3px 3px 20px 5px #4c1e16;
+        box-shadow: 3px 3px 20px 5px #4c1e16;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        line-height: 189px;
+    }
+
+    .typewriter p:first-child {
+        font-size: 15px;
+    }
+    #p1 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 15px;
+    }
+    #experiences {
+        height: 160%;
+    }
+    .left {
+        left: -79px;
+    }
+    .timeline {
+        max-width: 70%;
+    }
+
+}
+
+@media (max-width: 605px) {
+    .left {
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .circle {
+        height: 90px;
+        width: 90px;
+        line-height: 110px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+    li h2 {
+        font-size: 18px;
+    }
+    li h4 {
+        font-size: 13px;
+    }
+
+    #p1 {
+        font-size: 13px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+
+    #experiences {
+        height: 230%;
+    }
+
+    .timeline {
+        max-width: 70%;
+    }
+    .container {
+        width: 88%;
+    }
+    .left {
+        left: 0.4%;
+    }
+    .content-info {
+        font-size: 14px;
+    }
+    
+    .content-subinfo {
+        font-size: 14px;
+    }
+    
+    .title-info {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 408px) {
+
+    img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .circle {
+        height: 60px;
+        width: 60px;
+        line-height: 110px;
+    }
+
+    li {
+        font-size: 10px;
+    }
+    li h2 {
+        font-size: 14px;
+    }
+    li h4 {
+        font-size: 10px;
+    }
+
+    #p1 {
+        font-size: 10px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .content-info {
+        font-size: 12px;
+    }
+    
+    .content-subinfo {
+        font-size: 12px;
+    }
+    
+    .title-info {
+        font-size: 12px
+    }
+
+    .content {
+        padding: 10px 20px;
+    }
+
+    .right {
+        left: -11%;
+    }
+
+    .left {
+        left: -10.6%;
+    }
+
+    .timeline::after {
+        left: 5px;
+    }
+
+    #experiences {
+        height: 230%;
+    }
+
+    .timeline {
+        max-width: 70%;
+    }
+    .container {
+        width: 88%;
+    }
+     #aboutme{
+        height: 170%;
+     }
+     #skills {
+        /* height: 70%; */
+        height: 240%;
+    }
+}
