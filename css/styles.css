@@ -353,6 +353,12 @@ P {
     text-align: left;
 }
 
+.aling-aboutme-p {
+    font-family: 'Quattrocento Sans', sans-serif;
+    line-height: 35px;
+    text-align: left;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -639,9 +645,9 @@ a {
     .container {
         width: 88%;
     }
-     #aboutme{
-        height: 170%;
-     }
+    #aboutme{
+        height: 260%;
+    }
      #skills {
         /* height: 70%; */
         height: 240%;
