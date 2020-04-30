@@ -73,7 +73,7 @@ footer {
 
 section {
     /* height: 70%; */
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     /* align-items: center;
@@ -84,7 +84,7 @@ section {
 ul {
     padding: 0;
     margin: 0;
-    height: 70%;
+    min-height: 70%;
 }
 
 li {
@@ -379,9 +379,7 @@ a {
     color: #FF9F55;
 }
 
-#experiences {
-    height: 160%;
-}
+
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -423,10 +421,7 @@ a {
     #p1 {
         font-size: 20px;
     }
-    #skills {
-        /* height: 70%; */
-        height: 180%;
-    }
+    
 }
 @media (max-width: 768px) {
 
@@ -504,9 +499,7 @@ a {
         font-family: 'Amatic SC', cursive;
         font-size: 15px;
     }
-    #experiences {
-        height: 160%;
-    }
+    
     .left {
         left: -79px;
     }
@@ -552,10 +545,7 @@ a {
         font-size: 10px;
     }
 
-    #experiences {
-        height: 230%;
-    }
-
+    
     .timeline {
         max-width: 70%;
     }
@@ -575,6 +565,9 @@ a {
     
     .title-info {
         font-size: 14px
+    }
+    .aling-aboutme {
+        margin: 70px 50px;
     }
 }
 
@@ -642,13 +635,5 @@ a {
     .container {
         width: 88%;
     }
-    #aboutme{
-        height: 310%;
-    }
-     #skills {
-        height: 300%;
-    }
-    #experiences {
-        height: 310%;
-    }
+    
 }
